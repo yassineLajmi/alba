@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Proposals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-text: #1f2937;
+            --secondary-text: #4b5563;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --card-header-bg: #f9fafb;
+            --card-border: #e5e7eb;
+            --summary-bg: #f8fafc;
+            --buy-bg: #ecfdf5;
+            --buy-border: #a7f3d0;
+            --buy-text: #065f46;
+            --sell-bg: #fef2f2;
+            --sell-border: #fecaca;
+            --sell-text: #991b1b;
+            --accent-color: #2563eb;
+            --heading-color: #111827;
+            --divider-color: #e5e7eb;
+        }
+
+        [data-theme="dark"] {
+            --primary-text: #e5e7eb;
+            --secondary-text: #9ca3af;
+            --bg-color: #111827;
+            --card-bg: #1f2937;
+            --card-header-bg: #374151;
+            --card-border: #374151;
+            --summary-bg: #111827;
+            --buy-bg: rgba(6, 95, 70, 0.3);
+            --buy-border: #059669;
+            --buy-text: #d1fae5;
+            --sell-bg: rgba(153, 27, 27, 0.3);
+            --sell-border: #dc2626;
+            --sell-text: #fee2e2;
+            --accent-color: #60a5fa;
+            --heading-color: #f3f4f6;
+            --divider-color: #4b5563;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--primary-text);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .header-content {
+            text-align: left;
+        }
+
+        h1 {
+            font-weight: 600;
+            color: var(--heading-color);
+            margin: 0 0 5px 0;
+        }
+
+        .subtitle {
+            color: var(--secondary-text);
+            font-size: 1.1rem;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            color: var(--primary-text);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+        }
+
+        .theme-toggle:hover {
+            background: var(--card-header-bg);
+        }
+
+        .proposal-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .proposal-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-header {
+            padding: 20px 24px;
+            border-bottom: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--card-header-bg);
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .client-id {
+            font-weight: 600;
+            color: var(--secondary-text);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-body {
+            padding: 24px;
+        }
+
+        .think-summary {
+            margin-bottom: 24px;
+            color: var(--secondary-text);
+            font-size: 1rem;
+            background-color: var(--summary-bg);
+            padding: 16px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .trades-container {
+            display: grid;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .trades-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .trade-section {
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid transparent;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .trade-section.buy {
+            background-color: var(--buy-bg);
+            border-color: var(--buy-border);
+        }
+
+        .trade-section.sell {
+            background-color: var(--sell-bg);
+            border-color: var(--sell-border);
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .buy .section-title {
+            color: var(--buy-text);
+        }
+
+        .sell .section-title {
+            color: var(--sell-text);
+        }
+
+        .asset-label {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+            color: var(--heading-color);
+        }
+
+        .quantity {
+            font-size: 0.9rem;
+            color: var(--secondary-text);
+            margin-bottom: 12px;
+            font-family: 'Inter', monospace;
+        }
+
+        .justification {
+            font-size: 0.95rem;
+            color: var(--primary-text);
+        }
+
+        .empty-state {
+            display: none;
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Investment Proposals</h1>
+                <div class="subtitle">Generated Recommendations</div>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <span id="theme-text">Dark Mode</span>
+            </button>
+        </header>
+
+        <div id="proposals-container">
+            <!-- Proposals will be injected here -->
+        </div>
+    </div>
+
+    <script>
+        // The provided JSON data
+        const proposalsData = [
+            {
+                "clientNo": "45789201",
+                "thinkSummary": "Portfolio shows concentration risk with 42% in tech equities and significant USD overweight (68% vs target 35%). Client profile indicates moderate risk tolerance and income need. Recommend rotating into dividend aristocrat with defensive characteristics while taking profits from overextended growth position. Healthcare sector provides defensive positioning with demographic tailwinds.",
+                "buyTrade": {
+                    "AssetLabel": "Johnson & Johnson (JNJ)",
+                    "quantity": 4.20,
+                    "justification": "We recommend establishing a position in Johnson & Johnson, a healthcare dividend aristocrat with 62 consecutive years of dividend increases. This investment addresses your portfolio's need for income generation and defensive positioning. The company's diversified business model across pharmaceuticals, medical devices, and consumer health provides stability during market volatility. Trading at attractive valuation multiples relative to its historical average, JNJ offers both capital preservation and steady income growth potential."
+                },
+                "sellTrades": [
+                    {
+                        "AssetLabel": "NVIDIA Corporation (NVDA)",
+                        "quantity": 4.20,
+                        "justification": "Taking partial profits from NVIDIA after substantial appreciation. While we remain constructive on AI long-term, the position has grown to represent outsized concentration risk in your portfolio. This rebalancing reduces tech sector overweight and crystalizes gains to fund more defensive allocations aligned with your income objectives."
+                    }
+                ]
+            },
+            {
+                "clientNo": "89234567",
+                "thinkSummary": "Fixed income allocation critically underweight at 8% versus 28% target. Rising geopolitational tensions and economic uncertainty support increasing duration exposure. Portfolio heavily skewed toward equities (79%) with limited downside protection. EUR exposure at 15% below 25% target. German Bunds offer sovereign quality, negative correlation to equities, and EUR currency rebalancing.",
+                "buyTrade": {
+                    "AssetLabel": "iShares Germany Govt Bond UCITS ETF (SEGA)",
+                    "quantity": 6.50,
+                    "justification": "We propose allocating to German government bonds through this UCITS ETF to address your significant fixed income underweight. With German Bunds considered the eurozone's risk-free benchmark, this position provides portfolio ballast and diversification benefits. Current yields are attractive relative to recent years, and the EUR denomination helps rebalance your currency exposure toward target weights. In periods of equity market stress, this allocation should provide important downside protection and liquidity."
+                },
+                "sellTrades": [
+                    {
+                        "AssetLabel": "iShares S&P 500 UCITS ETF (IUSA)",
+                        "quantity": 6.50,
+                        "justification": "Reducing US equity exposure which is significantly overweight relative to strategic allocation. Markets are pricing in optimistic scenarios while economic indicators show mixed signals. This tactical reduction funds the fixed income allocation needed for risk management and better portfolio balance."
+                    }
+                ]
+            },
+            {
+                "clientNo": "23456789",
+                "thinkSummary": "Emerging markets dramatically underweight at 2% versus 12% target allocation. Portfolio concentrated in developed markets (85%) missing diversification and growth opportunities. China's recent stimulus measures and attractive valuations create entry opportunity. Client's long time horizon (20+ years to retirement) supports EM allocation despite higher volatility.",
+                "buyTrade": {
+                    "AssetLabel": "iShares MSCI Emerging Markets UCITS ETF (EIMI)",
+                    "quantity": 5.75,
+                    "justification": "We recommend increasing emerging markets exposure through this broad-based ETF covering over 24 countries. Recent policy support in China, attractive valuations across EM versus developed markets, and your long investment horizon make this an opportune entry point. Emerging markets offer higher growth potential and diversification benefits, particularly as global economic dynamics shift. The position addresses your structural underweight while providing exposure to the world's fastest-growing economies and rising consumer classes."
+                },
+                "sellTrades": [
+                    {
+                        "AssetLabel": "Vanguard FTSE Developed Europe UCITS ETF (VEUR)",
+                        "quantity": 5.75,
+                        "justification": "Trimming European developed market exposure which is overweight at 32% versus 22% target. European growth outlook remains challenged by structural issues and energy dependencies. Reallocating to EM provides better risk-adjusted growth prospects and improves geographic diversification across your portfolio."
+                    }
+                ]
+            },
+            {
+                "clientNo": "67890123",
+                "thinkSummary": "Portfolio lacks precious metals exposure entirely (0% vs 3-5% recommended for diversification). Current geopolitical uncertainty, central bank gold purchases, and inflation concerns support strategic gold allocation. Client expressed interest in portfolio insurance against systemic risks. Physical gold ETF provides liquid exposure without storage concerns.",
+                "buyTrade": {
+                    "AssetLabel": "SPDR Gold Shares (GLD)",
+                    "quantity": 3.00,
+                    "justification": "We suggest initiating a gold position through this physically-backed ETF to enhance portfolio resilience. Gold historically provides protection during periods of market stress, currency debasement, and geopolitical uncertainty. Central banks globally have been net buyers, and gold's negative correlation to equities during crisis periods makes it valuable portfolio insurance. This allocation represents a modest but meaningful hedge that can preserve purchasing power across market cycles without significantly impacting expected returns."
+                },
+                "sellTrades": null
+            },
+            {
+                "clientNo": "34567890",
+                "thinkSummary": "Client recently received inheritance windfall creating 18% cash position, well above 2-3% target. Market conditions present opportunity in quality dividend growth stocks. Portfolio lacks consumer staples exposure (0% vs 8% target). Swiss market positioning aligns with client's CHF liabilities and home country bias preference expressed in last review.",
+                "buyTrade": {
+                    "AssetLabel": "NestlÃ© SA (NESN)",
+                    "quantity": 7.25,
+                    "justification": "We recommend deploying excess cash into NestlÃ©, a Swiss consumer staples leader with global diversification across 180+ countries. The company offers defensive characteristics through non-cyclical product portfolio, consistent cash flow generation, and a track record of dividend growth. Trading at reasonable valuations relative to quality peers, NestlÃ© provides CHF exposure matching your liability profile while filling the consumer staples gap in your allocation. The position transforms idle cash into a productive asset with inflation-resistant pricing power."
+                },
+                "sellTrades": null
+            }
+        ];
+
+        function renderProposals(data) {
+            const container = document.getElementById('proposals-container');
+            container.innerHTML = '';
+
+            data.forEach(proposal => {
+                const card = document.createElement('div');
+                card.className = 'proposal-card';
+
+                const hasSellTrades = proposal.sellTrades && proposal.sellTrades.length > 0;
+                const buyClass = hasSellTrades ? '' : 'full-width';
+
+                let sellTradesHtml = '';
+                if (hasSellTrades) {
+                    sellTradesHtml = proposal.sellTrades.map(trade => `
+                    <div class="trade-item">
+                        <div class="asset-label">${trade.AssetLabel}</div>
+                        <div class="quantity">Quantity: ${trade.quantity}</div>
+                        <div class="justification">${trade.justification}</div>
+                    </div>
+                `).join('<hr style="border: 0; border-top: 1px dashed var(--divider-color); margin: 15px 0;">');
+
+                    sellTradesHtml = `
+                    <div class="trade-section sell">
+                        <div class="section-title">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                            Sell Recommendation
+                        </div>
+                        ${sellTradesHtml}
+                    </div>
+                `;
+                }
+
+                const buyTradeHtml = `
+                <div class="trade-section buy ${buyClass}">
+                    <div class="section-title">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+                        Buy Recommendation
+                    </div>
+                    <div class="asset-label">${proposal.buyTrade.AssetLabel}</div>
+                    <div class="quantity">Quantity: ${proposal.buyTrade.quantity}</div>
+                    <div class="justification">${proposal.buyTrade.justification}</div>
+                </div>
+            `;
+
+                card.innerHTML = `
+                <div class="card-header">
+                    <span class="client-id">Client #${proposal.clientNo}</span>
+                </div>
+                <div class="card-body">
+                    <div class="think-summary">
+                        <strong>Analysis:</strong> ${proposal.thinkSummary}
+                    </div>
+                    <div class="trades-container">
+                        ${buyTradeHtml}
+                        ${sellTradesHtml}
+                    </div>
+                </div>
+            `;
+
+                container.appendChild(card);
+            });
+        }
+
+        // Theme Toggle Logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeText = document.getElementById('theme-text');
+        const sunIcon = document.querySelector('.sun-icon');
+        const moonIcon = document.querySelector('.moon-icon');
+        const htmlElement = document.documentElement;
+
+        function updateThemeUI(isDark) {
+            if (isDark) {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+                themeText.textContent = 'Light Mode';
+            } else {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+                themeText.textContent = 'Dark Mode';
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+            htmlElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme === 'dark');
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                htmlElement.setAttribute('data-theme', savedTheme);
+                updateThemeUI(savedTheme === 'dark');
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // Optional: Auto-detect system preference
+                // htmlElement.setAttribute('data-theme', 'dark');
+                // updateThemeUI(true);
+            }
+
+            renderProposals(proposalsData);
+        });
+    </script>
+
+</body>
+
+</html>
