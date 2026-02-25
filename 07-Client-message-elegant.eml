@@ -1,0 +1,663 @@
+Date: Tue, 25 Feb 2026 09:30:00 +0100 (CET)
+Subject: Propositions d'investissement personnalisées — Sélection de quatre convictions pour votre portefeuille
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="----=_Part_01_ClientMessage_20260225"
+X-Unsent: 1
+
+------=_Part_01_ClientMessage_20260225
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lombard Odier — Propositions d'investissement</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Lato:wght@300;400;700&display=swap');
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f2f0ec;
+      font-family: 'Lato', Arial, Helvetica, sans-serif;
+      color: #2c2c2c;
+    }
+
+    .wrapper {
+      background-color: #f2f0ec;
+      padding: 32px 0;
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 620px;
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background-color: #1a1a2e;
+      padding: 28px 40px;
+      border-bottom: 3px solid #b8996e;
+    }
+
+    .header-logo {
+      font-family: 'Lato', Arial, sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    .header-logo span {
+      color: #b8996e;
+    }
+
+    .header-tagline {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #9a9a9a;
+      margin-top: 4px;
+    }
+
+    /* Hero band */
+    .hero {
+      background-color: #1a1a2e;
+      padding: 36px 40px 32px 40px;
+      border-bottom: 1px solid #b8996e;
+    }
+
+    .hero-eyebrow {
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8996e;
+      margin-bottom: 10px;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-weight: 400;
+      color: #ffffff;
+      line-height: 1.3;
+      margin: 0 0 8px 0;
+    }
+
+    .hero-subtitle {
+      font-size: 12px;
+      color: #c5c0b8;
+      letter-spacing: 0.5px;
+      margin: 0;
+    }
+
+    /* Body padding */
+    .body-pad {
+      padding: 36px 40px;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: linear-gradient(to right, #b8996e, transparent);
+      margin: 24px 0;
+    }
+
+    /* Section label */
+    .section-label {
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8996e;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    /* Intro text */
+    .intro {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #3a3a3a;
+    }
+
+    /* Portfolio status */
+    .status-block {
+      background-color: #f7f5f1;
+      border-left: 3px solid #b8996e;
+      padding: 18px 20px;
+      margin: 20px 0;
+    }
+
+    .status-block p {
+      margin: 0 0 8px 0;
+      font-size: 13px;
+      line-height: 1.65;
+      color: #4a4a4a;
+    }
+
+    .status-block p:last-child {
+      margin-bottom: 0;
+    }
+
+    .status-block strong {
+      color: #1a1a2e;
+    }
+
+    /* Conviction card */
+    .conviction-card {
+      border: 1px solid #e5e0d8;
+      margin-bottom: 18px;
+      background: #ffffff;
+    }
+
+    .conviction-header {
+      background-color: #1a1a2e;
+      padding: 14px 20px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .conviction-number {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #b8996e;
+      display: block;
+      margin-bottom: 3px;
+      font-family: 'Lato', Arial, sans-serif;
+      font-weight: 700;
+    }
+
+    .conviction-theme {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #9a9a9a;
+    }
+
+    .conviction-name {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 16px;
+      font-weight: 400;
+      color: #ffffff;
+      margin: 6px 0 2px 0;
+    }
+
+    .conviction-body {
+      padding: 18px 20px;
+    }
+
+    .meta-row {
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #f0ece6;
+    }
+
+    .meta-pill {
+      display: inline-block;
+      background-color: #1a1a2e;
+      color: #b8996e;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      padding: 3px 10px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+
+    .meta-info {
+      display: inline-block;
+      font-size: 10.5px;
+      color: #888;
+      letter-spacing: 0.3px;
+    }
+
+    .conviction-rationale {
+      font-size: 13px;
+      line-height: 1.7;
+      color: #3a3a3a;
+      margin-bottom: 14px;
+    }
+
+    .conviction-rationale strong {
+      color: #1a1a2e;
+    }
+
+    .financing-label {
+      font-size: 9px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #b8996e;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .financing-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    .financing-table td {
+      padding: 4px 0;
+      color: #555;
+      vertical-align: top;
+      border-bottom: 1px solid #f5f2ee;
+    }
+
+    .financing-table td:first-child {
+      color: #c0392b;
+      font-weight: 700;
+      width: 56px;
+      font-size: 11px;
+    }
+
+    .financing-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Summary block */
+    .summary-outer {
+      background-color: #1a1a2e;
+      padding: 24px 28px;
+      margin: 4px 0 24px 0;
+    }
+
+    .summary-title {
+      font-size: 9px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #b8996e;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    .summary-col-title {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 10px;
+    }
+
+    .summary-col-title.buy {
+      color: #7ec8a0;
+    }
+
+    .summary-col-title.sell {
+      color: #e07070;
+    }
+
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    .summary-table td {
+      padding: 4px 0;
+      vertical-align: top;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      color: #c5c0b8;
+    }
+
+    .summary-table td.pct {
+      width: 52px;
+      font-weight: 700;
+    }
+
+    .summary-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .summary-table.buy td.pct {
+      color: #7ec8a0;
+    }
+
+    .summary-table.sell td.pct {
+      color: #e07070;
+    }
+
+    .summary-spacer {
+      height: 20px;
+    }
+
+    /* Closing */
+    .closing {
+      font-size: 13.5px;
+      line-height: 1.75;
+      color: #3a3a3a;
+    }
+
+    .closing-sig {
+      margin-top: 24px;
+      font-size: 13px;
+      color: #5a5a5a;
+    }
+
+    .closing-sig strong {
+      display: block;
+      font-size: 13.5px;
+      color: #1a1a2e;
+      letter-spacing: 0.3px;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #f7f5f1;
+      border-top: 1px solid #e5e0d8;
+      padding: 18px 40px;
+    }
+
+    .footer p {
+      font-size: 10.5px;
+      color: #999;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .footer-gold-line {
+      height: 2px;
+      background-color: #b8996e;
+      margin-bottom: 14px;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#f2f0ec" role="presentation">
+    <tr>
+      <td align="center" style="padding: 32px 0;">
+        <table width="620" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" role="presentation" style="width:620px; max-width:620px;">
+
+          
+          <!-- HERO -->
+          <tr>
+            <td style="background-color:#24243e; padding:36px 40px 32px 40px; border-bottom:1px solid #b8996e;">
+              <div style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:12px;">
+                Propositions d'investissement &mdash; Conseil sur mesure
+              </div>
+              <div style="font-family:Georgia,'Times New Roman',serif; font-size:26px; font-weight:400; color:#ffffff; line-height:1.3; margin:0 0 10px 0;">
+                Quatre convictions pour renforcer et diversifier votre portefeuille
+              </div>
+              <div style="font-size:12px; color:#b0aaa0; letter-spacing:0.5px; margin:0;">
+                Préparé le 25 février 2026 &nbsp;·&nbsp; Usage strictement confidentiel
+              </div>
+            </td>
+          </tr>
+
+          <!-- SALUTATION & INTRO -->
+          <tr>
+            <td style="padding:36px 40px 0 40px;">
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0 0 16px 0;">
+                Madame, Monsieur,
+              </p>
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0 0 16px 0;">
+                Dans le cadre de notre suivi régulier de votre patrimoine, nous avons élaboré pour vous une sélection ciblée de propositions d'arbitrage. Ces recommandations visent à renforcer les zones géographiques sous-représentées dans votre portefeuille &mdash; notamment les marchés américains et l'Asie émergente &mdash; tout en réduisant progressivement certaines concentrations sectorielles sur les établissements bancaires européens et quelques positions prépondérantes.
+              </p>
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0;">
+                Ces convictions s'inscrivent pleinement dans notre vue de maison et dans la philosophie de gestion long terme qui guide notre accompagnement.
+              </p>
+            </td>
+          </tr>
+
+          <!-- PORTFOLIO STATUS -->
+          <tr>
+            <td style="padding:24px 40px 0 40px;">
+              <div style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:12px;">
+                Diagnostic de votre portefeuille
+              </div>
+              <div style="background-color:#f7f5f1; border-left:3px solid #b8996e; padding:18px 20px;">
+                <p style="margin:0 0 9px 0; font-size:13px; line-height:1.65; color:#4a4a4a;"><strong style="color:#1a1a2e;">Orientation dominante :</strong> Portefeuille fortement exposé aux marchés actions, avec une concentration marquée sur l'Europe et la Suisse.</p>
+                <p style="margin:0 0 9px 0; font-size:13px; line-height:1.65; color:#4a4a4a;"><strong style="color:#1a1a2e;">Sous-expositions identifiées :</strong> Allocation insuffisante aux actions américaines de qualité et quasi-absence dans les marchés émergents d'Asie.</p>
+                <p style="margin:0; font-size:13px; line-height:1.65; color:#4a4a4a;"><strong style="color:#1a1a2e;">Concentrations à surveiller :</strong> Expositions significatives sur les établissements bancaires européens, les télécommunications et le secteur de l'énergie.</p>
+              </div>
+            </td>
+          </tr>
+
+          <!-- CONVICTION CARDS -->
+          <tr>
+            <td style="padding:28px 40px 0 40px;">
+              <div style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:18px;">
+                Nos quatre convictions sélectionnées
+              </div>
+
+              <!-- CARD 1 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin-bottom:16px; border:1px solid #e5e0d8;">
+                <tr>
+                  <td style="background-color:#1a1a2e; padding:14px 20px;">
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:2px;">
+                      Conviction 01 &nbsp;&middot;&nbsp; <span style="color:#9a9a9a;">Asie émergente &mdash; Digital & Intelligence Artificielle</span>
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; font-weight:400; color:#ffffff; margin-top:6px;">
+                      Tencent Holdings &mdash; Chine
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #f0ece6;">
+                      <span style="display:inline-block; background-color:#1a1a2e; color:#b8996e; font-size:10px; font-weight:700; letter-spacing:1px; padding:3px 10px; margin-right:6px;">ACHAT 2,0&nbsp;%</span>
+                      <span style="font-size:10.5px; color:#888;">&nbsp;ISIN : KYG875721634 &nbsp;&middot;&nbsp; Communication Services &nbsp;&middot;&nbsp; HKD &nbsp;&middot;&nbsp; <em>Strong Buy</em></span>
+                    </div>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      Votre portefeuille ne dispose actuellement d'aucune exposition significative aux marchés émergents, une zone que nous apprécions tout particulièrement, et notamment l'Asie. Tencent représente l'une des plateformes numériques et d'intelligence artificielle les plus structurantes en Chine, à la tête d'un écosystème intégrant services de messagerie, jeux en ligne et solutions cloud.
+                    </p>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      <strong style="color:#1a1a2e;">Notre proposition :</strong> Initier une position représentant environ 2,0&nbsp;% du portefeuille.
+                    </p>
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:8px;">
+                      Financement proposé
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px;">
+                      <tr><td style="color:#c0392b; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−1,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Deutsche Bank (NOM) &nbsp;&mdash;&nbsp; 4,72&nbsp;% → 3,72&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Orange &nbsp;&mdash;&nbsp; 4,08&nbsp;% → 3,58&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; color:#555;">Crédit Agricole &nbsp;&mdash;&nbsp; 1,05&nbsp;% → 0,55&nbsp;%</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CARD 2 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin-bottom:16px; border:1px solid #e5e0d8;">
+                <tr>
+                  <td style="background-color:#1a1a2e; padding:14px 20px;">
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:2px;">
+                      Conviction 02 &nbsp;&middot;&nbsp; <span style="color:#9a9a9a;">Semi-conducteurs & Infrastructure IA — Asie</span>
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; font-weight:400; color:#ffffff; margin-top:6px;">
+                      TSMC &mdash; Taïwan
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #f0ece6;">
+                      <span style="display:inline-block; background-color:#1a1a2e; color:#b8996e; font-size:10px; font-weight:700; letter-spacing:1px; padding:3px 10px; margin-right:6px;">ACHAT 1,5&nbsp;%</span>
+                      <span style="font-size:10.5px; color:#888;">&nbsp;ISIN : TW0002330008 &nbsp;&middot;&nbsp; Information Technology &nbsp;&middot;&nbsp; TWD &nbsp;&middot;&nbsp; <em>Strong Buy</em></span>
+                    </div>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      TSMC demeure le principal fabricant mondial de semi-conducteurs avancés, composants indispensables au déploiement de l'intelligence artificielle et de l'informatique en nuage. À ce jour, vous ne disposez d'aucune exposition directe à cet acteur, pourtant central dans notre thématique de conviction.
+                    </p>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      <strong style="color:#1a1a2e;">Notre proposition :</strong> Initier une position représentant environ 1,5&nbsp;% du portefeuille.
+                    </p>
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:8px;">
+                      Financement proposé
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px;">
+                      <tr><td style="color:#c0392b; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Commerzbank (Nach. Kap.) &nbsp;&mdash;&nbsp; 3,74&nbsp;% → 3,24&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Société Générale Paris A &nbsp;&mdash;&nbsp; 1,85&nbsp;% → 1,35&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; color:#555;">ENI (Ord.) &nbsp;&mdash;&nbsp; 3,67&nbsp;% → 3,17&nbsp;%</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CARD 3 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin-bottom:16px; border:1px solid #e5e0d8;">
+                <tr>
+                  <td style="background-color:#1a1a2e; padding:14px 20px;">
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:2px;">
+                      Conviction 03 &nbsp;&middot;&nbsp; <span style="color:#9a9a9a;">Intelligence Artificielle & Cloud — Marchés américains</span>
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; font-weight:400; color:#ffffff; margin-top:6px;">
+                      Microsoft Corporation &mdash; États-Unis
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #f0ece6;">
+                      <span style="display:inline-block; background-color:#1a1a2e; color:#b8996e; font-size:10px; font-weight:700; letter-spacing:1px; padding:3px 10px; margin-right:6px;">ACHAT 2,0&nbsp;%</span>
+                      <span style="font-size:10.5px; color:#888;">&nbsp;ISIN : US5949181045 &nbsp;&middot;&nbsp; Information Technology &nbsp;&middot;&nbsp; USD &nbsp;&middot;&nbsp; <em>Strong Buy</em></span>
+                    </div>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      Microsoft s'est imposé comme l'un des acteurs incontournables de l'intelligence artificielle appliquée aux entreprises, avec Azure, Copilot et la suite Office 365. Votre portefeuille présente actuellement une sous-pondération notable sur les valeurs américaines et une exposition quasi nulle à cette thématique. Microsoft offre à la fois qualité de bilan, visibilité des revenus et positionnement structurel sur des tendances de long terme.
+                    </p>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      <strong style="color:#1a1a2e;">Notre proposition :</strong> Porter la pondération Microsoft à environ 2,0&nbsp;% du portefeuille.
+                    </p>
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:8px;">
+                      Financement proposé
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px;">
+                      <tr><td style="color:#c0392b; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Intel Corporation &nbsp;&mdash;&nbsp; 1,35&nbsp;% → 0,85&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">5,75&nbsp;% Deutsche Pfandbriefbank Perp. 19.04.2049 &nbsp;&mdash;&nbsp; 1,13&nbsp;% → 0,63&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">8,00&nbsp;% Banco Santander Perp. 31.12.2099 &nbsp;&mdash;&nbsp; 0,77&nbsp;% → 0,27&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; color:#555;">USA T-Bill 0&nbsp;% 17.03.2026 &nbsp;&mdash;&nbsp; 1,16&nbsp;% → 0,66&nbsp;%</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CARD 4 -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin-bottom:0; border:1px solid #e5e0d8;">
+                <tr>
+                  <td style="background-color:#1a1a2e; padding:14px 20px;">
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:2px;">
+                      Conviction 04 &nbsp;&middot;&nbsp; <span style="color:#9a9a9a;">Beauté & Santé — Valeur défensive de long terme</span>
+                    </div>
+                    <div style="font-family:Georgia,'Times New Roman',serif; font-size:17px; font-weight:400; color:#ffffff; margin-top:6px;">
+                      L'Oréal S.A. &mdash; France
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:18px 20px;">
+                    <div style="margin-bottom:12px; padding-bottom:10px; border-bottom:1px solid #f0ece6;">
+                      <span style="display:inline-block; background-color:#1a1a2e; color:#b8996e; font-size:10px; font-weight:700; letter-spacing:1px; padding:3px 10px; margin-right:6px;">ACHAT 1,5&nbsp;%</span>
+                      <span style="font-size:10.5px; color:#888;">&nbsp;ISIN : FR0000120321 &nbsp;&middot;&nbsp; Consumer Staples &nbsp;&middot;&nbsp; EUR &nbsp;&middot;&nbsp; <em>Strong Buy</em></span>
+                    </div>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      Numéro un mondial de la beauté, L'Oréal bénéficie de puissants moteurs structurels : vieillissement démographique, montée en gamme des classes moyennes et expansion en Asie. Son portefeuille de marques iconiques, son exposition équilibrée entre luxe et mass-market, et la solidité de son modèle financier en font un titre défensif de haute qualité, adapté à un horizon d'investissement long terme.
+                    </p>
+                    <p style="font-size:13px; line-height:1.7; color:#3a3a3a; margin:0 0 14px 0;">
+                      <strong style="color:#1a1a2e;">Notre proposition :</strong> Initier une position représentant environ 1,5&nbsp;% du portefeuille.
+                    </p>
+                    <div style="font-size:9px; letter-spacing:2px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:8px;">
+                      Financement proposé
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px;">
+                      <tr><td style="color:#c0392b; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid #f5f2ee; font-size:11px;">−1,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid #f5f2ee; color:#555;">Teva Pharmaceutical Industries (ADR) &nbsp;&mdash;&nbsp; 4,03&nbsp;% → 3,03&nbsp;%</td></tr>
+                      <tr><td style="color:#c0392b; font-weight:700; padding:4px 0; font-size:11px;">−0,5&nbsp;%</td><td style="padding:4px 0; color:#555;">Kinross Gold Corporation &nbsp;&mdash;&nbsp; 4,10&nbsp;% → 3,60&nbsp;%</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- SUMMARY -->
+          <tr>
+            <td style="padding:28px 40px 0 40px;">
+              <div style="font-size:9px; letter-spacing:3px; text-transform:uppercase; color:#b8996e; font-family:Arial,Helvetica,sans-serif; font-weight:700; margin-bottom:14px;">
+                Récapitulatif des arbitrages
+              </div>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="background-color:#1a1a2e; padding:0;">
+                <tr>
+                  <td style="padding:24px 28px;">
+
+                    <!-- BUY -->
+                    <div style="font-size:10px; font-weight:700; letter-spacing:0.5px; color:#7ec8a0; font-family:Arial,Helvetica,sans-serif; margin-bottom:10px;">
+                      &#9650;&nbsp; Acheter — Total cible : +7,0&nbsp;%
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px; margin-bottom:18px;">
+                      <tr><td style="color:#7ec8a0; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">+2,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Tencent Holdings</td></tr>
+                      <tr><td style="color:#7ec8a0; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">+1,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">TSMC</td></tr>
+                      <tr><td style="color:#7ec8a0; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">+2,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Microsoft Corporation</td></tr>
+                      <tr><td style="color:#7ec8a0; font-weight:700; padding:4px 0;">+1,5&nbsp;%</td><td style="padding:4px 0; color:#c5c0b8;">L'Oréal S.A.</td></tr>
+                    </table>
+
+                    <!-- Divider -->
+                    <div style="height:1px; background:rgba(184,153,110,0.3); margin-bottom:18px;"></div>
+
+                    <!-- SELL -->
+                    <div style="font-size:10px; font-weight:700; letter-spacing:0.5px; color:#e07070; font-family:Arial,Helvetica,sans-serif; margin-bottom:10px;">
+                      &#9660;&nbsp; Vendre / Réduire — Total cible : −7,0&nbsp;%
+                    </div>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" role="presentation" style="font-size:12px;">
+                      <tr><td style="color:#e07070; font-weight:700; width:56px; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−1,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Deutsche Bank</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Orange</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Crédit Agricole</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Commerzbank</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Société Générale</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">ENI</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Intel Corporation</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Deutsche Pfandbriefbank Perp. 5,75&nbsp;% 2049</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Banco Santander Perp. 8,00&nbsp;% 2099</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−0,5&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">USA T-Bill 0&nbsp;% 03.2026</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07);">−1,0&nbsp;%</td><td style="padding:4px 0; border-bottom:1px solid rgba(255,255,255,0.07); color:#c5c0b8;">Teva Pharmaceutical Industries</td></tr>
+                      <tr><td style="color:#e07070; font-weight:700; padding:4px 0;">−0,5&nbsp;%</td><td style="padding:4px 0; color:#c5c0b8;">Kinross Gold Corporation</td></tr>
+                    </table>
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- CLOSING -->
+          <tr>
+            <td style="padding:32px 40px 36px 40px;">
+              <div style="height:1px; background:linear-gradient(to right, #b8996e, transparent); margin-bottom:24px;"></div>
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0 0 16px 0;">
+                Dans l'hypothèse où ces propositions recueilleraient votre approbation, nous vous suggérons d'échelonner leur mise en œuvre en plusieurs tranches successives, afin de lisser les points d'entrée et de minimiser l'impact marché.
+              </p>
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0 0 24px 0;">
+                Nous demeurons naturellement à votre entière disposition pour échanger sur ces propositions dans le détail et adapter le plan d'exécution à vos préférences.
+              </p>
+              <p style="font-size:13.5px; line-height:1.8; color:#3a3a3a; margin:0 0 4px 0;">
+                Nous vous prions d'agréer, Madame, Monsieur, l'expression de nos salutations distinguées.
+              </p>
+              <div style="margin-top:24px; padding-top:18px; border-top:1px solid #f0ece6;">
+                <div style="font-size:13.5px; font-weight:700; color:#1a1a2e; letter-spacing:0.3px;">Votre équipe de conseil</div>
+                <div style="font-size:12px; color:#888; margin-top:4px; letter-spacing:0.5px;">Banque Lombard Odier &amp; Cie SA</div>
+                <div style="font-size:11px; color:#b8996e; margin-top:2px; letter-spacing:0.5px;">Investment Advisory &nbsp;·&nbsp; Private Clients</div>
+              </div>
+            </td>
+          </tr>
+
+          <!-- FOOTER -->
+          <tr>
+            <td style="background-color:#f7f5f1; border-top:1px solid #e5e0d8; padding:20px 40px;">
+              <div style="height:1px; background-color:#b8996e; opacity:0.4; margin-bottom:14px;"></div>
+              <p style="font-size:10px; color:#999; line-height:1.65; margin:0;">
+                Ce document a été préparé à titre d'information exclusive et à des fins de conseil personnalisé. Les pondérations indiquées sont données à titre indicatif et seront ajustées en fonction des conditions de marché au moment de l'exécution. Ce message et les informations qu'il contient sont strictement confidentiels et destinés uniquement à leur destinataire. Lombard Odier est autorisée et réglementée en Suisse par la FINMA.
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
+------=_Part_01_ClientMessage_20260225--
